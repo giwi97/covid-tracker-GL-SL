@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../utils/constants.dart';
+import 'country.dart';
+import 'global.dart';
 import 'navigation_option.dart';
 
 enum NavigationStatus {
@@ -34,7 +36,7 @@ class _TrackerState extends State<Tracker> {
         children: <Widget>[
           Expanded(
             child: Container(
-              padding: EdgeInsets.all(32),
+              padding: EdgeInsets.all(15),
               decoration: BoxDecoration(
                 color: kPrimaryColor,
                 borderRadius: BorderRadius.only(
@@ -42,9 +44,12 @@ class _TrackerState extends State<Tracker> {
                   bottomRight: Radius.circular(50),
                 ),
               ),
+              child: AnimatedSwitcher(
+                duration: Duration(milliseconds: 200),
+                child: navigationStatus == NavigationStatus.GLOBAL ? Global() : Country(),
+                ),
             ),
           ),
-          
           Container(
             height: size.height * 0.1,
             child: Row(
