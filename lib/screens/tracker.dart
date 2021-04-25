@@ -13,9 +13,12 @@ class Tracker extends StatefulWidget{
 }
 
 class _TrackerState extends State<Tracker> {
+  NavigationStatus navigationStatus = NavigationStatus.GLOBAL;
+  
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
+    Size size = MediaQuery.of(context).size;
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
@@ -41,7 +44,18 @@ class _TrackerState extends State<Tracker> {
                   ),
                 ),
               ),
-            )
+            ),
+
+            Container(
+              height: size.height * 0.1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  
+                ],
+              ),
+            ),
+
           ],
         ),
     );
