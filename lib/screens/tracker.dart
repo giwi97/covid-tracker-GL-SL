@@ -33,6 +33,13 @@ class _TrackerState extends State<Tracker> {
             Expanded(
               child: Container(
                 padding: EdgeInsets.all(32),
+                decoration: BoxDecoration(
+                  color: kPrimaryColor,
+                  borderRadius: BorderRadius.only(
+                    bottomLeft: Radius.circular(50),
+                    bottomRight: Radius.circular(50),
+                  ),
+                ),
               ),
             )
           ],
