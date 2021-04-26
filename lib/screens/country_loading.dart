@@ -13,9 +13,8 @@ class CountryLoading extends StatelessWidget {
     return Column(
       children: <Widget>[
         inputTextLoading ? loadingInputCard() : Container(),
-        Expanded(
-        child: loadingCard(),
-        ),
+        Expanded(child: loadingCard(),),
+        
         loadingCard(),
         loadingChartCard(),
       ],
