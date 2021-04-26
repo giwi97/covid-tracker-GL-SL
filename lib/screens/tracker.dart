@@ -65,7 +65,7 @@ class _TrackerState extends State<Tracker> {
                   },
                 ),
                 NavigationOption(
-                  title: "Country",
+                  title: "Sri Lanka",
                   selected: navigationStatus == NavigationStatus.COUNTRY,
                   onSelected: () {
                     setState(() {
