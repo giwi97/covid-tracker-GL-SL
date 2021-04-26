@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Color kPrimaryColor = Color(0xFF166DE0);
+Color kPrimaryColor = Color.fromRGBO(23, 24, 59, 1.0);
 Color kConfirmedColor = Color(0xFFFF1242);
 Color kActiveColor = Color(0xFF017BFF);
 Color kRecoveredColor = Color(0xFF29A746);
@@ -16,4 +16,4 @@ LinearGradient kGradientShimmer = LinearGradient(
 );
 
 RegExp reg = new RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))');
-Function mathFunc = (Match match) => '${match[1]}.';
+Function mathFunc = (Match match) => '${match[1]},';
