@@ -30,7 +30,8 @@ class _GlobalState extends State<Global> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
 
-        Padding(
+Expanded(
+        child:Padding(
           padding: EdgeInsets.symmetric(horizontal: 4, vertical: 6),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -60,7 +61,7 @@ class _GlobalState extends State<Global> {
             ],
           ),
         ),
-
+    ),
         FutureBuilder(
           future: summary,
           builder: (context, snapshot) {
